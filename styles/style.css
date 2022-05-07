@@ -17,7 +17,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: all 0.2s linear;
 }
 
 html {
@@ -58,6 +57,7 @@ section {
   cursor: pointer;
   font-size: 1.7rem;
   text-transform: capitalize;
+  transition: 0.2s linear;
 }
 .btn:hover {
   background: var(--yellow);
@@ -426,6 +426,7 @@ section {
 .services .box-container .box img {
   height: 7rem;
   margin-bottom: 0.5rem;
+  transition: 0.2s linear;
 }
 .services .box-container .box h3 {
   font-size: 1.7rem;
@@ -464,6 +465,7 @@ section {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: 0.2s linear;
 }
 .projects .box-container .box .content {
   display: flex;
@@ -583,6 +585,47 @@ section {
   font-size: 1.4rem;
   color: var(--light-color);
   line-height: 2;
+}
+
+.contact {
+  background: var(--black);
+}
+.contact .heading {
+  color: var(--white);
+}
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.contact .row .map {
+  flex: 1 1 41rem;
+  width: 100%;
+}
+.contact .row form {
+  flex: 1 1 41rem;
+  background: var(--white);
+  padding: 2rem;
+}
+.contact .row form h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.contact .row form .box {
+  margin: 0.7rem 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  border-bottom: var(--border);
+  font-size: 1.6rem;
+  color: var(--light-color);
+}
+.contact .row form .box:focus {
+  border-color: var(--yellow);
+}
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
 }
 
 @media screen and (max-width: 1200px) {
