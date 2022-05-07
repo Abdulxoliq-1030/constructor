@@ -74,6 +74,28 @@ html {
   }
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+
+  &:hover {
+    background: var(--yellow);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    top: 50%;
+    opacity: 0;
+  }
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -110,6 +132,108 @@ html {
   #menu-btn {
     display: none;
   }
+
+  .search-form {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70rem;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    animation: fadeIn 0.2s linear;
+
+    &.active {
+      display: flex;
+    }
+
+    input {
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+      background: var(--light-bg);
+      font-size: 1.6rem;
+      color: var(--light-color);
+    }
+
+    label {
+      font-size: 2.5rem;
+      color: var(--black);
+      cursor: pointer;
+
+      &:hover {
+        color: var(--yellow);
+      }
+    }
+  }
+
+  .login-form {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40rem;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    text-align: center;
+    animation: fadeIn 0.2s linear;
+
+    h3 {
+      @include titleText(3rem);
+      padding-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .box {
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+      background: var(--light-bg);
+      font-size: 1.6rem;
+      color: var(--light-color);
+      margin: 0.7rem 0;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+
+      label {
+        font-size: 1.5rem;
+        color: var(--light-color);
+        cursor: pointer;
+      }
+
+      a {
+        font-size: 1.5rem;
+        color: var(--light-color);
+        margin-left: auto;
+
+        &:hover {
+          color: var(--yellow);
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+    }
+    p {
+      @include graphText(1.5rem);
+      padding-top: 1rem;
+
+      a {
+        color: var(--yellow);
+      }
+    }
+  }
 }
 
 // Media screen
@@ -139,7 +263,7 @@ html {
       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 
       &.active {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       }
 
       a {

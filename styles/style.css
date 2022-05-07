@@ -36,6 +36,26 @@ html::-webkit-scrollbar-thumb {
   background: var(--yellow);
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+}
+.btn:hover {
+  background: var(--yellow);
+}
+
+@keyframes fadeIn {
+  0% {
+    top: 50%;
+    opacity: 0;
+  }
+}
 .header {
   position: sticky;
   top: 0;
@@ -82,6 +102,98 @@ html::-webkit-scrollbar-thumb {
 }
 .header #menu-btn {
   display: none;
+}
+.header .search-form {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70rem;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  animation: fadeIn 0.2s linear;
+}
+.header .search-form.active {
+  display: flex;
+}
+.header .search-form input {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  background: var(--light-bg);
+  font-size: 1.6rem;
+  color: var(--light-color);
+}
+.header .search-form label {
+  font-size: 2.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+.header .search-form label:hover {
+  color: var(--yellow);
+}
+.header .login-form {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40rem;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 0.2s linear;
+}
+.header .login-form h3 {
+  font-size: 3rem;
+  color: var(--black);
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+.header .login-form .box {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  background: var(--light-bg);
+  font-size: 1.6rem;
+  color: var(--light-color);
+  margin: 0.7rem 0;
+}
+.header .login-form .flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+.header .login-form .flex label {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  cursor: pointer;
+}
+.header .login-form .flex a {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  margin-left: auto;
+}
+.header .login-form .flex a:hover {
+  color: var(--yellow);
+  text-decoration: underline;
+}
+.header .login-form .btn {
+  width: 100%;
+}
+.header .login-form p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 1.5;
+  padding-top: 1rem;
+}
+.header .login-form p a {
+  color: var(--yellow);
 }
 
 @media screen and (max-width: 1200px) {
