@@ -431,6 +431,43 @@ section {
   }
 }
 
+// Services
+
+.services {
+  background: var(--light-bg);
+
+  .box-container {
+    @include grid(30rem);
+
+    .box {
+      text-align: center;
+      padding: 3rem;
+      background: var(--white);
+      box-shadow: var(--box-shadow);
+      border: var(--border);
+
+
+      &:hover img{
+           transform: translateY(-1rem);
+      }
+
+      img {
+        height: 7rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        @include titleText(1.7rem);
+        padding: 1rem 0;
+      }
+
+      p {
+        @include graphText(1.4rem)
+      }
+    }
+  }
+}
+
 // Media screen
 @media screen and(max-width: 1200px) {
   .header {
