@@ -77,6 +77,12 @@ html {
 section {
   padding: 5rem 10%;
 }
+.heading {
+  margin-bottom: 3rem;
+  @include titleText(3rem);
+  padding-left: 1rem;
+  border-left: 1rem solid var(--yellow);
+}
 
 .btn {
   display: inline-block;
@@ -370,6 +376,58 @@ section {
 
   .swiper-button-prev {
     right: 7rem;
+  }
+}
+
+// about
+
+.about {
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    .video {
+      flex: 1 1 41rem;
+
+      video {
+        width: 100%;
+      }
+    }
+    .content {
+      flex: 1 1 41rem;
+
+      h3 {
+        @include titleText(4.5rem);
+      }
+
+      p {
+        @include graphText(1.5rem);
+        padding: 1rem 0;
+      }
+    }
+  }
+
+  .box-container {
+    margin-top: 3rem;
+    @include grid(16rem);
+    align-items: flex-end;
+
+    .box {
+      text-align: center;
+      background: var(--light-bg);
+      padding: 3rem 2rem;
+
+      h3 {
+        @include titleText(4rem);
+      }
+
+      p {
+        @include graphText(1.5rem);
+        padding-top: 0.5rem;
+      }
+    }
   }
 }
 

@@ -40,6 +40,15 @@ section {
   padding: 5rem 10%;
 }
 
+.heading {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: var(--black);
+  text-transform: capitalize;
+  padding-left: 1rem;
+  border-left: 1rem solid var(--yellow);
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -344,6 +353,56 @@ section {
 }
 .home .swiper-button-prev {
   right: 7rem;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.about .row .video {
+  flex: 1 1 41rem;
+}
+.about .row .video video {
+  width: 100%;
+}
+.about .row .content {
+  flex: 1 1 41rem;
+}
+.about .row .content h3 {
+  font-size: 4.5rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.about .row .content p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+  padding: 1rem 0;
+}
+.about .box-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+  align-items: flex-end;
+}
+.about .box-container .box {
+  text-align: center;
+  background: var(--light-bg);
+  padding: 3rem 2rem;
+}
+.about .box-container .box h3 {
+  font-size: 4rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.about .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+  padding-top: 0.5rem;
 }
 
 @media screen and (max-width: 1200px) {
