@@ -59,3 +59,22 @@ var swiper = new Swiper(".reviews-slider", {
     },
   },
 });
+
+
+
+var swiper = new Swiper(".blog-slider", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 20,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});
