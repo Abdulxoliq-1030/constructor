@@ -575,6 +575,57 @@ section {
   }
 }
 
+// pricing
+
+.pricing {
+  background: var(--light-bg);
+
+  .box-container {
+    @include grid(30rem);
+
+    .box {
+      background: var(--white);
+      text-align: center;
+      padding: 2rem;
+      border: var(--border);
+      box-shadow: var(--box-shadow);
+
+      i {
+        font-size: 3rem;
+        height: 7rem;
+        width: 7rem;
+        line-height: 7rem;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+        background: var(--yellow);
+        color: var(--black);
+      }
+      h3 {
+        @include titleText(2rem);
+        font-weight: normal;
+      }
+
+      .price {
+        padding: 1rem 0;
+        font-size: 5rem;
+        @include titleText(5rem);
+
+        span {
+          font-size: 2rem;
+        }
+      }
+      .list {
+        padding: 1rem 0;
+
+        p {
+          padding: 1rem 0;
+          @include graphText(1.4rem);
+        }
+      }
+    }
+  }
+}
+
 // Media screen
 @media screen and(max-width: 1200px) {
   .header {
