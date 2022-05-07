@@ -60,8 +60,6 @@ var swiper = new Swiper(".reviews-slider", {
   },
 });
 
-
-
 var swiper = new Swiper(".blog-slider", {
   loop: true,
   grabCursor: true,
@@ -75,6 +73,26 @@ var swiper = new Swiper(".blog-slider", {
     },
     991: {
       slidesPerView: 3,
+    },
+  },
+});
+
+var swiper = new Swiper(".logo-slider", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    991: {
+      slidesPerView: 5,
     },
   },
 });

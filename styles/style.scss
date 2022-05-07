@@ -719,6 +719,17 @@ section {
   }
 }
 
+// clients
+.logo-container {
+  text-align: center;
+
+  img {
+    height: 10rem;
+    pointer-events: none;
+    user-select: none;
+  }
+}
+
 // Media screen
 @media screen and(max-width: 1200px) {
   .header {
