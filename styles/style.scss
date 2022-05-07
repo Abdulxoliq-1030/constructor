@@ -181,6 +181,11 @@ html {
     padding: 2rem;
     text-align: center;
     animation: fadeIn 0.2s linear;
+    display: none;
+
+    &.active {
+      display: block;
+    }
 
     h3 {
       @include titleText(3rem);
@@ -227,10 +232,14 @@ html {
     }
     p {
       @include graphText(1.5rem);
-      padding-top: 1rem;
+      padding-top: 1.5rem;
 
       a {
         color: var(--yellow);
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

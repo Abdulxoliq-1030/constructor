@@ -1,5 +1,6 @@
 let navbar = document.querySelector(".header .navbar");
 let searchForm = document.querySelector(".header .search-form");
+let loginForm = document.querySelector(".header .login-form");
 
 document.querySelector("#menu-btn").onclick = () => {
   navbar.classList.toggle("active");
@@ -7,6 +8,10 @@ document.querySelector("#menu-btn").onclick = () => {
 
 document.querySelector("#search-btn").onclick = () => {
   searchForm.classList.toggle("active");
+};
+
+document.querySelector("#login-btn").onclick = () => {
+  loginForm.classList.toggle("active");
 };
 
 window.onscroll = () => {

@@ -146,6 +146,10 @@ html::-webkit-scrollbar-thumb {
   padding: 2rem;
   text-align: center;
   animation: fadeIn 0.2s linear;
+  display: none;
+}
+.header .login-form.active {
+  display: block;
 }
 .header .login-form h3 {
   font-size: 3rem;
@@ -190,10 +194,13 @@ html::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
   color: var(--light-color);
   line-height: 1.5;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 .header .login-form p a {
   color: var(--yellow);
+}
+.header .login-form p a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1200px) {
